@@ -1,0 +1,22 @@
+{
+  "movies": [
+    {
+      "title": "Titanic",
+      "rating": "PG-13",
+      "imageName": "titanic",
+      "year": 1995
+    },
+    {
+      "title": "Boondock Saints",
+      "rating": "R",
+      "imageName": "boondock-saints",
+      "year": 1998
+    },
+    {
+      "title": "Toy Story",
+      "rating": "PG",
+      "imageName": "toy-story",
+      "year": 1997
+    }
+  ]
+}

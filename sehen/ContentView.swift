@@ -1,16 +1,19 @@
-//
-//  ContentView.swift
-//  sehen
-//
-//  Created by Clark on 6/4/19.
-//  Copyright © 2019 Clark. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView : View {
+    @State var searchTerm: String = "search..."
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            TextField($searchTerm)
+                .padding(.horizontal)
+                .textFieldStyle(.roundedBorder)
+            NavigationView {
+                NavigationButton(destination: SearchResultView(movies: testData)) {
+                    Text("Click")
+                }.navigationBarTitle(title: "FooBar")
+            }
+        }
     }
 }
 
